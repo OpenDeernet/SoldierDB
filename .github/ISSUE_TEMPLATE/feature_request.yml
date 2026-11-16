@@ -1,0 +1,23 @@
+name: Feature or roadmap idea
+description: Propose a new capability or a change to the roadmap
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should SoldierDB be able to do, and why is it worth learning or building?
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Rough design
+      description: Which layer does it touch (pager, btree, db, sql, capi, clients)? Any references (papers, other databases)?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I checked ROADMAP.md and open issues for an existing item
+          required: true

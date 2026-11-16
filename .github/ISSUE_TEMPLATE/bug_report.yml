@@ -1,0 +1,29 @@
+name: Bug report
+description: Something returns wrong results, crashes, or loses data
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: SQL statements, a Go snippet, or a failing test. The smaller the better.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit
+      description: Output of `git rev-parse --short HEAD`
+  - type: input
+    id: env
+    attributes:
+      label: OS and Go version
+      placeholder: macOS 15, go1.24.2
